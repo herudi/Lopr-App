@@ -1,0 +1,21 @@
+<ion-modal-view>
+    <div class="bar bar-header bar-positive item-input-inset">
+        <button ng-click="close()" class="button button-clear"><i class="icon ion-ios-close-outline"></i>
+        </button>
+        <div class="title">
+            <p>Detail Problem</p>
+        </div>
+    </div>
+    
+    <ion-content padding="false" class="has-header">
+        <div class="list">
+            <label class="item item-avatar-left">
+                <img ng-src="img/material/{{svg}}.svg">
+                <p style="color: black;font-size: 20px">{{post.title}}</p>
+            </label>
+            <label class="item item-input item-stacked-label">
+                <p>{{post.problem}}</p>
+            </label>
+        </div>
+    </ion-content>
+</ion-modal-view>

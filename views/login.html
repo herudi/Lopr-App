@@ -1,0 +1,25 @@
+<style>
+    .assertive-bg{
+        background-image: url("img/blue2.jpg");
+    }
+
+</style>
+<ion-view view-title="Login">
+    <ion-content class="assertive-bg text-center padding">
+        <img ng-src="img/logo.png" width="90px" height="100px"/>
+        <h2 style="color: #f8f8f8">Welcome to Lopr App</h2>
+        <p style="color: #f8f8f8">Login Sosial Media</p>
+        <hr>
+        <div class="row">
+            <div class="col">
+                <button class="button icon ion-social-facebook button-positive button-block" ng-click="login('facebook')"></button>
+            </div>
+            <div class="col">
+                <button class="button icon ion-social-googleplus button-assertive button-block" ng-click="login('google')"></button>
+            </div>
+        </div>
+    </ion-content>
+    <ion-footer-bar align-title="left" class="bar-assertive">
+        <h5 style="font-size: 12px" class="title">List of problem application</h5>
+    </ion-footer-bar>
+</ion-view>

@@ -1,0 +1,19 @@
+<ion-view view-title="User Available">
+    <ion-nav-buttons side="secondary">
+        <button class="button button-icon icon ion-ios-search" ng-click="showFilterBar()">
+        </button>
+    </ion-nav-buttons>
+    <ion-content>
+        <ion-refresher pulling-icon="ion-arrow-down-b" on-refresh="refreshItems()">
+        </ion-refresher>
+        <ion-list>
+            <ion-item ng-click="klik(data.uid)" class="item-remove-animate item-avatar item-icon-right" ng-repeat="data in online" type="item-text-wrap" >
+                <img ng-src="{{data.picture}}">
+                <h2>{{data.displayName}}</h2>
+                <p style="color: red" ng-if="(data.uid | svg) === 'G'">From : Google</p>
+                <p style="color: blue" ng-if="(data.uid | svg) === 'F'">From : Facebook</p>
+                <i class="icon ion-chevron-right icon-accessory"></i>
+            </ion-item>
+        </ion-list>
+    </ion-content>
+</ion-view>
